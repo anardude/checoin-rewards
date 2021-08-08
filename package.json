@@ -2,7 +2,7 @@
   "name": "checoin-rewards",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://egalerme.github.io/checoin-rewards",
+  "homepage": "https://anardude.github.io/checoin-rewards",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
