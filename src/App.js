@@ -109,6 +109,9 @@ class App extends Component {
           coinPriceUSD={this.state.coinPriceUSD}
         />
         <h1>$CheCoins Rewards</h1>
+        <div>
+          Simulate how many rewards you will recieve by holding $CheCoins
+        </div>
         <img alt='logo-checoin' src={logo} />
         <br />
         <br />
