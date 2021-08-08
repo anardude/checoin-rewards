@@ -6,7 +6,7 @@ import { Button } from '../button/button.component';
 
 export const EntryBlock = props => (
   <div className='entry-block-container'>
-    <h2 className='left'>$CheCoins Number</h2>
+    <h2 className='left'>Number of $CheCoins :</h2>
     <div className='grid'>
       <Button
         value='10000'
@@ -43,7 +43,7 @@ export const EntryBlock = props => (
       value={props.coinsNumber !== 0 ? props.coinsNumber : ''}
     />
     <br></br>
-    <h2 className='left'>Transactions volume</h2>
+    <h2 className='left'>Transactions volume by day:</h2>
     <div className='grid'>
       <Button
         value='10000'
