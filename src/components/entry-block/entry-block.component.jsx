@@ -68,7 +68,7 @@ export const EntryBlock = props => (
     />
     <div className='left'>
       Wallet value in USD dollars :
-      {props.coinsNumber &&
+      {props.coinsNumber > 0 &&
         '$' +
           (
             Math.round(props.coinPriceUSD * props.coinsNumber * 100) / 100
