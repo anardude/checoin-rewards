@@ -1,0 +1,9 @@
+.img-bottom {
+  max-width: 100%;
+}
+
+@media (min-width: 1080px) {
+  .img-bottom {
+    max-width: 40%;
+  }
+}

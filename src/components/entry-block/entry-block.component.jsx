@@ -7,33 +7,57 @@ import { Button } from '../button/button.component';
 export const EntryBlock = props => (
   <div className='entry-block-container'>
     <h2 className='left'>Number of $CheCoins :</h2>
-    <div className='grid'>
-      <Button
-        value='10000'
-        handleClick={props.handleClickButtonNumber}
-        text='+ 10K'
-      />
-      <Button
-        value='100000'
-        handleClick={props.handleClickButtonNumber}
-        text='+ 100K'
-      />
-      <Button
-        value='1000000'
-        handleClick={props.handleClickButtonNumber}
-        text='+ 1M'
-      />
-      <Button
-        value='10000000'
-        handleClick={props.handleClickButtonNumber}
-        text='+ 10M'
-      />
-      <Button
-        value='100000000'
-        handleClick={props.handleClickButtonNumber}
-        text='+ 100M'
-      />
-      <Button handleClick={props.handleClickButtonNumber} text='Reset' />
+    <div className='row around-xs'>
+      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div class='box-first'>
+          <Button
+            value='10000'
+            handleClick={props.handleClickButtonNumber}
+            text='+ 10K'
+          />
+        </div>
+      </div>
+      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div class='box-first'>
+          <Button
+            value='100000'
+            handleClick={props.handleClickButtonNumber}
+            text='+ 100K'
+          />
+        </div>
+      </div>
+      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div class='box-first'>
+          <Button
+            value='1000000'
+            handleClick={props.handleClickButtonNumber}
+            text='+ 1M'
+          />
+        </div>
+      </div>
+      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div class='box-first'>
+          <Button
+            value='10000000'
+            handleClick={props.handleClickButtonNumber}
+            text='+ 10M'
+          />
+        </div>
+      </div>
+      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div class='box-first'>
+          <Button
+            value='100000000'
+            handleClick={props.handleClickButtonNumber}
+            text='+ 100M'
+          />
+        </div>
+      </div>
+      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div class='box-first'>
+          <Button handleClick={props.handleClickButtonNumber} text='Reset' />
+        </div>
+      </div>
     </div>
     <InputBox
       boxType='number'
@@ -50,33 +74,57 @@ export const EntryBlock = props => (
     </div>
     <br></br>
     <h2 className='left'>Transactions volume by day:</h2>
-    <div className='grid'>
-      <Button
-        value='10000'
-        handleClick={props.handleClickButtonVolume}
-        text='+ 10K'
-      />
-      <Button
-        value='100000'
-        handleClick={props.handleClickButtonVolume}
-        text='+ 100K'
-      />
-      <Button
-        value='1000000'
-        handleClick={props.handleClickButtonVolume}
-        text='+ 1M'
-      />
-      <Button
-        value='10000000'
-        handleClick={props.handleClickButtonVolume}
-        text='+ 10M'
-      />
-      <Button
-        value='100000000'
-        handleClick={props.handleClickButtonVolume}
-        text='+ 100M'
-      />
-      <Button handleClick={props.handleClickButtonVolume} text='Reset' />
+    <div className='row around-xs'>
+      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div class='box-first'>
+          <Button
+            value='10000'
+            handleClick={props.handleClickButtonVolume}
+            text='+ 10K'
+          />
+        </div>
+      </div>
+      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div class='box-first'>
+          <Button
+            value='100000'
+            handleClick={props.handleClickButtonVolume}
+            text='+ 100K'
+          />
+        </div>
+      </div>
+      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div class='box-first'>
+          <Button
+            value='1000000'
+            handleClick={props.handleClickButtonVolume}
+            text='+ 1M'
+          />
+        </div>
+      </div>
+      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div class='box-first'>
+          <Button
+            value='10000000'
+            handleClick={props.handleClickButtonVolume}
+            text='+ 10M'
+          />
+        </div>
+      </div>
+      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div class='box-first'>
+          <Button
+            value='100000000'
+            handleClick={props.handleClickButtonVolume}
+            text='+ 100M'
+          />
+        </div>
+      </div>
+      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div class='box-first'>
+          <Button handleClick={props.handleClickButtonVolume} text='Reset' />
+        </div>
+      </div>
     </div>
     <InputBox
       boxType='number'

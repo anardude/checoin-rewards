@@ -5,6 +5,7 @@ import logo from './logo.png';
 import { EntryBlock } from './components/entry-block/entry-block.component';
 import { PriceChecoin } from './components/price-checoin/price-checoin.component';
 import { ResultBlock } from './components/result-block/result-block.component';
+import { BottomBlock } from './components/bottom-block/bottom-block.component';
 
 class App extends Component {
   constructor(props) {
@@ -132,6 +133,7 @@ class App extends Component {
           coinsNumber={this.state.coinsNumber}
           percentage={this.state.percentage}
         />
+        <BottomBlock />
       </div>
     );
   }
