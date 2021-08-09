@@ -8,17 +8,17 @@ export const ResultBlock = props => {
     <div className='result-block-container row '>
       <br />
       <div className='col-xs-10 col-sm-6 col-md-8 col-lg-10'>
-        <div className='right'>Estimated rewards by day :</div>
+        <div className='right'>Estimated rewards per day :</div>
         <br />
-        <div className='right'>Estimated percentage by day :</div>
+        <div className='right'>Estimated percentage per day :</div>
         <br />
-        <div className='right'>Estimated rewards by month :</div>
+        <div className='right'>Estimated rewards per month :</div>
         <br />
-        <div className='right'>Estimated percentage by month :</div>
+        <div className='right'>Estimated percentage per month :</div>
         <br />
-        <div className='right'>Estimated rewards by year :</div>
+        <div className='right'>Estimated rewards per year :</div>
         <br />
-        <div className='right'>Estimated percentage by year :</div>
+        <div className='right'>Estimated percentage per year :</div>
       </div>
       <div className='col-xs-2 col-sm-6 col-md-4 col-lg-2'>
         <div className='right'>

@@ -62,7 +62,7 @@ export const EntryBlock = props => (
     <InputBox
       boxType='number'
       boxName='coinsNumber'
-      placeholder='Enter how many $CheCoins you have'
+      placeholder='Enter the number of $CheCoins you have'
       handleChange={props.handleChangeCoinsNumber}
       value={props.coinsNumber !== 0 ? props.coinsNumber : ''}
     />
@@ -71,7 +71,7 @@ export const EntryBlock = props => (
       {props.walletUSD > 0 && '$' + props.walletUSD.toLocaleString()}
     </div>
     <br></br>
-    <h2 className='left'>Transactions volume by day:</h2>
+    <h2 className='left'>Transactions volume per day:</h2>
     <div className='row around-xs'>
       <div className='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
         <div className='box-first'>

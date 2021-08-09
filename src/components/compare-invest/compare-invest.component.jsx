@@ -13,10 +13,10 @@ export const CompareInvest = props => (
         <thead>
           <tr>
             <th className='center' scope='col'>
-              Other investement option :
+              Other investment option :
             </th>
             <th className='center' scope='col'>
-              Average years interests
+              Average year interests
             </th>
             <th className='center' scope='col'>
               Year rewards
@@ -51,7 +51,7 @@ export const CompareInvest = props => (
             </td>
           </tr>
           <tr>
-            <td>Stock market investment</td>
+            <td>Stock Market investment</td>
             <td className='right'>10%</td>
             <td className='right'>
               <ResultField
