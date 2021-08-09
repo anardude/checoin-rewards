@@ -112,6 +112,8 @@ class App extends Component {
         <div>
           Simulate how many rewards you will recieve by holding $CheCoins
         </div>
+        <br />
+        <br />
         <img alt='logo-checoin' src={logo} />
         <br />
         <br />
@@ -123,6 +125,7 @@ class App extends Component {
           handleChangeTransactionsVolume={this.handleChangeTransactionsVolume}
           coinsNumber={this.state.coinsNumber}
           transactionsVolume={this.state.transactionsVolume}
+          coinPriceUSD={this.state.coinPriceUSD}
         />
         <ResultBlock
           resultContent={this.state.rewards}
