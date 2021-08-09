@@ -3,6 +3,12 @@
   color: #fcb700;
 }
 
+.caution {
+  color: white;
+  background-color: red;
+  font-weight: bold;
+}
+
 h1 {
   font-size: 48px;
   color: #fcb700;

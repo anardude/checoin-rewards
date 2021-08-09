@@ -140,6 +140,9 @@ class App extends Component {
         <div>
           Simulate how many rewards you will recieve by holding $CheCoins
         </div>
+        <h1 className='center caution'>
+          This is not financial advice, do your own research
+        </h1>
         <br />
         <br />
         <img alt='logo-checoin' src={logo} />
