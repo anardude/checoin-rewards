@@ -13,7 +13,7 @@ export const PriceChecoin = ({
         $CheCoin MarketCap : $ {marketCap.toLocaleString()}
       </div>
       <div className='center'>
-        <a href='#' onClick={handleRefreshButton}>
+        <a href='#top' onClick={handleRefreshButton}>
           <img alt='refresh' src={refresh} />
         </a>
       </div>
