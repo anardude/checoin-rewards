@@ -8,8 +8,8 @@ export const EntryBlock = props => (
   <div className='entry-block-container'>
     <h2 className='left'>Number of $CheCoins :</h2>
     <div className='row around-xs'>
-      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
-        <div class='box-first'>
+      <div className='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div className='box-first'>
           <Button
             value='10000'
             handleClick={props.handleClickButtonNumber}
@@ -17,8 +17,8 @@ export const EntryBlock = props => (
           />
         </div>
       </div>
-      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
-        <div class='box-first'>
+      <div className='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div className='box-first'>
           <Button
             value='100000'
             handleClick={props.handleClickButtonNumber}
@@ -26,8 +26,8 @@ export const EntryBlock = props => (
           />
         </div>
       </div>
-      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
-        <div class='box-first'>
+      <div className='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div className='box-first'>
           <Button
             value='1000000'
             handleClick={props.handleClickButtonNumber}
@@ -35,8 +35,8 @@ export const EntryBlock = props => (
           />
         </div>
       </div>
-      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
-        <div class='box-first'>
+      <div className='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div className='box-first'>
           <Button
             value='10000000'
             handleClick={props.handleClickButtonNumber}
@@ -44,8 +44,8 @@ export const EntryBlock = props => (
           />
         </div>
       </div>
-      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
-        <div class='box-first'>
+      <div className='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div className='box-first'>
           <Button
             value='100000000'
             handleClick={props.handleClickButtonNumber}
@@ -53,8 +53,8 @@ export const EntryBlock = props => (
           />
         </div>
       </div>
-      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
-        <div class='box-first'>
+      <div className='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div className='box-first'>
           <Button handleClick={props.handleClickButtonNumber} text='Reset' />
         </div>
       </div>
@@ -77,8 +77,8 @@ export const EntryBlock = props => (
     <br></br>
     <h2 className='left'>Transactions volume by day:</h2>
     <div className='row around-xs'>
-      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
-        <div class='box-first'>
+      <div className='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div className='box-first'>
           <Button
             value='10000'
             handleClick={props.handleClickButtonVolume}
@@ -86,8 +86,8 @@ export const EntryBlock = props => (
           />
         </div>
       </div>
-      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
-        <div class='box-first'>
+      <div className='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div className='box-first'>
           <Button
             value='100000'
             handleClick={props.handleClickButtonVolume}
@@ -95,8 +95,8 @@ export const EntryBlock = props => (
           />
         </div>
       </div>
-      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
-        <div class='box-first'>
+      <div className='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div className='box-first'>
           <Button
             value='1000000'
             handleClick={props.handleClickButtonVolume}
@@ -104,8 +104,8 @@ export const EntryBlock = props => (
           />
         </div>
       </div>
-      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
-        <div class='box-first'>
+      <div className='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div className='box-first'>
           <Button
             value='10000000'
             handleClick={props.handleClickButtonVolume}
@@ -113,8 +113,8 @@ export const EntryBlock = props => (
           />
         </div>
       </div>
-      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
-        <div class='box-first'>
+      <div className='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div className='box-first'>
           <Button
             value='100000000'
             handleClick={props.handleClickButtonVolume}
@@ -122,8 +122,8 @@ export const EntryBlock = props => (
           />
         </div>
       </div>
-      <div class='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
-        <div class='box-first'>
+      <div className='col-xs-5 col-sm-4 col-md-4 col-lg-2'>
+        <div className='box-first'>
           <Button handleClick={props.handleClickButtonVolume} text='Reset' />
         </div>
       </div>
