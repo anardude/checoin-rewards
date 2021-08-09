@@ -81,7 +81,7 @@ export const CompareInvest = props => (
                 resultName='rewards-percentage-year'
                 resultContent={
                   props.percentage > 0 &&
-                  Math.round(props.percentage * 365).toLocaleString() + ' %'
+                  Math.round(props.percentage * 365).toLocaleString() + '%'
                 }
               />
             </td>
