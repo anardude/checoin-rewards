@@ -6,12 +6,18 @@ import { ResultField } from '../result-field/result-field.component';
 export const ResultBlock = props => {
   return (
     <div className='result-block-container row '>
+      <br />
       <div className='col-xs-10 col-sm-6 col-md-8 col-lg-10'>
         <div className='right'>Estimated rewards by day :</div>
+        <br />
         <div className='right'>Estimated percentage by day :</div>
+        <br />
         <div className='right'>Estimated rewards by month :</div>
+        <br />
         <div className='right'>Estimated percentage by month :</div>
+        <br />
         <div className='right'>Estimated rewards by year :</div>
+        <br />
         <div className='right'>Estimated percentage by year :</div>
       </div>
       <div className='col-xs-2 col-sm-6 col-md-4 col-lg-2'>
@@ -25,6 +31,7 @@ export const ResultBlock = props => {
             }
           />
         </div>
+        <br />
         <div className='right'>
           <ResultField
             resultName='rewards-percentage-day'
@@ -34,6 +41,7 @@ export const ResultBlock = props => {
             }
           />
         </div>
+        <br />
         <div className='right'>
           <ResultField
             resultName='rewards-value-month'
@@ -44,6 +52,7 @@ export const ResultBlock = props => {
             }
           />
         </div>
+        <br />
         <div className='right'>
           <ResultField
             resultName='rewards-percentage-month'
@@ -53,6 +62,7 @@ export const ResultBlock = props => {
             }
           />
         </div>
+        <br />
         <div className='right'>
           <ResultField
             resultName='rewards-value-year'
@@ -65,6 +75,7 @@ export const ResultBlock = props => {
             }
           />
         </div>
+        <br />
         <div className='right'>
           <ResultField
             resultName='rewards-percentage-year'

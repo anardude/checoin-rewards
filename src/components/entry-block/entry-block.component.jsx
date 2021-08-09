@@ -68,11 +68,7 @@ export const EntryBlock = props => (
     />
     <div className='left'>
       Wallet value in USD dollars :
-      {props.coinsNumber > 0 &&
-        '$' +
-          (
-            Math.round(props.coinPriceUSD * props.coinsNumber * 100) / 100
-          ).toLocaleString()}
+      {props.walletUSD > 0 && '$' + props.walletUSD.toLocaleString()}
     </div>
     <br></br>
     <h2 className='left'>Transactions volume by day:</h2>

@@ -6,6 +6,7 @@ import { EntryBlock } from './components/entry-block/entry-block.component';
 import { PriceChecoin } from './components/price-checoin/price-checoin.component';
 import { ResultBlock } from './components/result-block/result-block.component';
 import { BottomBlock } from './components/bottom-block/bottom-block.component';
+import { CompareInvest } from './components/compare-invest/compare-invest.component';
 
 class App extends Component {
   constructor(props) {
@@ -22,6 +23,7 @@ class App extends Component {
       coinPriceUSD: 0,
       dataToken: {},
       percentage: 0,
+      walletUSD: 0,
     };
   }
 
@@ -46,6 +48,7 @@ class App extends Component {
       transactionsVolume: transactionsVolume,
       rewards: newRewards,
       percentage: this.calculPercentage(coinsNumber, newRewards),
+      walletUSD: this.calculWalletUSD(coinsNumber),
     }));
   }
 
@@ -92,14 +95,37 @@ class App extends Component {
     });
   }
 
-  componentDidMount() {
+  getCoinPrice() {
     fetch('https://api.pancakeswap.info/api/v2/tokens/' + this.state.token)
       .then(response => response.json())
       .then(dataToken => this.parseDataToken(dataToken));
   }
 
+  handleRefreshButton(e) {
+    e && e.preventDefault();
+    this.getCoinPrice();
+  }
+
+  componentDidMount() {
+    this.getCoinPrice();
+  }
+
   calculPercentage(coins, rewards) {
     return coins > 0 ? (rewards * 100) / (coins * this.state.coinPriceUSD) : 0;
+  }
+
+  calculWalletUSD(coinsNumber) {
+    return (
+      coinsNumber > 0 &&
+      Math.round(this.state.coinPriceUSD * coinsNumber * 100) / 100
+    );
+  }
+
+  calculWalletUSDPercent(percent) {
+    return (
+      this.state.walletUSD > 0 &&
+      (Math.round(this.state.walletUSD * percent * 100) / 100).toLocaleString()
+    );
   }
 
   render() {
@@ -108,6 +134,7 @@ class App extends Component {
         <PriceChecoin
           marketCap={this.state.marketCap}
           coinPriceUSD={this.state.coinPriceUSD}
+          handleRefreshButton={this.handleRefreshButton.bind(this)}
         />
         <h1>$CheCoins Rewards</h1>
         <div>
@@ -118,7 +145,6 @@ class App extends Component {
         <img alt='logo-checoin' src={logo} />
         <br />
         <br />
-
         <EntryBlock
           handleClickButtonNumber={this.handleClickButtonNumber}
           handleClickButtonVolume={this.handleClickButtonVolume}
@@ -126,12 +152,21 @@ class App extends Component {
           handleChangeTransactionsVolume={this.handleChangeTransactionsVolume}
           coinsNumber={this.state.coinsNumber}
           transactionsVolume={this.state.transactionsVolume}
-          coinPriceUSD={this.state.coinPriceUSD}
+          walletUSD={this.state.walletUSD}
         />
+
         <ResultBlock
           resultContent={this.state.rewards}
           coinsNumber={this.state.coinsNumber}
           percentage={this.state.percentage}
+        />
+        <br />
+        <br />
+        <CompareInvest
+          percentage={this.state.percentage}
+          resultContent={this.state.rewards}
+          calculWalletUSDPercent={this.calculWalletUSDPercent.bind(this)}
+          walletUSD={this.state.walletUSD}
         />
         <BottomBlock />
       </div>
