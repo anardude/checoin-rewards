@@ -53,12 +53,12 @@ class App extends Component {
   }
 
   handleChangeCoinsNumber = e => {
-    const newValue = isNaN(e.target.value) ? 0 : e.target.value;
+    const newValue = isNaN(e.target.value) ? 0 : Number(e.target.value);
     this.rewardsUpdate(newValue, 'coinsNumber');
   };
 
   handleChangeTransactionsVolume = e => {
-    const newValue = isNaN(e.target.value) ? 0 : e.target.value;
+    const newValue = isNaN(e.target.value) ? 0 : Number(e.target.value);
     this.rewardsUpdate(newValue, 'transactionsVolume');
   };
 
